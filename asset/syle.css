@@ -12,10 +12,7 @@ header{
   height: 80px;
 }
 
-.jumbo{
+.jumbo,
+.about{
   background-color: #1abc9c;
-}
-
-.portofolio{
-  height: 600px;
 }

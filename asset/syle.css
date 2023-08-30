@@ -53,10 +53,29 @@ a{
   color: black;
 }
 
+.button-custom {
+  background-color: #1abc9c;
+  border: #1abc9c;
+}
+
+.button-custom:hover {
+  background-color:#1abc9cab;
+}
 
 
-.footer-top{
+.bkg_footer-top{
   background-color: #3a546d;
+}
+
+.bkg_footer-top ul li{
+  height: 28px;
+  aspect-ratio: 1/1;
+  line-height: 28px;
+}
+
+.bkg_footer-top a:hover{
+  background-color: white;
+  color: #3a546d;
 }
 
 .footer-bottom{

@@ -41,6 +41,20 @@ a{
   background-color: black;
 }
 
+.input-custom {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+  padding-left: 0;
+}
+
+.input-custom::placeholder {
+  color: black;
+}
+
+
+
 .footer-top{
   background-color: #3a546d;
 }

@@ -43,6 +43,8 @@
   </header>
 
   <main>
+
+    <!-- Jumbotron -->
     <section class="bkg_jumbo">
       <div class="container d-flex flex-column align-items-center justify-content-center">
           <div class="avatar p-4">
@@ -58,10 +60,11 @@
       </div>
     </section>
 
+    <!-- Portfolio -->
     <section>
-      <div class="container">
+      <div class="container py-5">
         <div class="d-flex flex-column align-items-center">
-          <h2 class="text-uppercase text-center mt-3">portfolio</h2>
+          <h3 class="text-uppercase text-center">portfolio</h3>
           <div class="star w-50 mb-3 d-flex align-items-center justify-content-center">
             <div class="line w-25"></div>
             <i class="fa-solid fa-star mx-2 fs-2"></i>
@@ -92,14 +95,15 @@
       </div>
     </section>
 
-    <section class="bkg_about">
+    <!-- About -->
+    <section class="bkg_about py-5">
       <div class="container">
         <div class="d-flex flex-column align-items-center">
-          <h2 class="text-uppercase text-center mt-3">about</h2>
+          <h3 class="text-uppercase text-center mt-3" style="color: white;">about</h3>
           <div class="star w-50 mb-3 d-flex align-items-center justify-content-center">
-            <div class="line w-25"></div>
-            <i class="fa-solid fa-star mx-2 fs-2"></i>
-            <div class="line w-25"></div>
+            <div class="line w-25" style="background-color: white;"></div>
+            <i class="fa-solid fa-star mx-2 fs-2" style="color: white;"></i>
+            <div class="line w-25" style="background-color: white;"></div>
           </div>
         </div>
       </div>
@@ -110,22 +114,33 @@
             <div class="col py-3">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</div>
           </div>
         </div>
-        <button type="button" class="btn btn-outline-light">Download</button>
+        <div class="text-center py-3">
+          <a href="#"><button type="button" class="btn btn-outline-light">Download</button></a>
+        </div>
       </div>
     </section>
 
-    <section class="contact">
-      <div class="container_fr">
-        <div class="row row-cols-1">
-          <div class="col text-center">contact me</div>
-          <div class="col text-center">illustration</div>    
-          <div class="col border-bottom">name</div>    
-          <div class="col border-bottom">email address</div>    
-          <div class="col border-bottom">phone number</div>
-          <div class="col border-bottom">message</div>
-          <div class="col">send</div>
+    <!-- Contact -->
+    <section class="py-5">
+      <div class="container d-flex flex-column align-items-center">
+        <h3 class="text-uppercase text-center">portfolio</h3>
+        <div class="star w-50 mb-3 d-flex align-items-center justify-content-center">
+          <div class="line w-25"></div>
+          <i class="fa-solid fa-star mx-2 fs-2"></i>
+          <div class="line w-25"></div>
         </div>
-      </div> 
+      </div>
+      <div class="container_fr py-5 ">
+        <form action="#">
+        
+          <input type="text" class="form-control input-custom py-3" placeholder="Name">
+          <input type="email" class="form-control input-custom py-3" placeholder="Email Address">
+          <input type="text" class="form-control input-custom py-3" placeholder="Phone Number">
+          <textarea name="" id="" cols="30" rows="8" placeholder="Message" class="form-control input-custom"></textarea>
+          <button class="btn btn-secondary mt-3 button-custom">Send</button>
+        </form>
+      </div>
+    
     </section>
 
   </main>

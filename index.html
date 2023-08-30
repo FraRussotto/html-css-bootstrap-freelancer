@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- CDN Bootstrap -->
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+  <!-- Font awesome -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css' integrity='sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==' crossorigin='anonymous'/>
 
   <!-- Link CSS -->
   <link rel="stylesheet" href="./asset/syle.css">
@@ -14,29 +17,43 @@
   <title>Bootstrap Freelancer</title>
 </head>
 <body>
-  <header class="d-flex justify-content-center">
-    <div class="row container row-cols-2">
-      <div class="col col-2 text-center">logo</div>
-      <div class="col col-2 text-center offset-8 d-md-none">menu</div>
-      <div class="col col-4 offset-6 d-none d-md-block">
-        <ul class="d-flex h-100 justify-content-between align-items-center list-unstyled">
-          <a href="#" class="text-decoration-none"><li>link</li></a>
-          <a href="#" class="text-decoration-none"><li>link</li></a>
-          <a href="#" class="text-decoration-none"><li>link</li></a>
-        </ul>
+  
+  <header class="bkg_header" style="color:white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="py-2">
+            <span class="text-uppercase fs-6 fw-bold my-0 py-1">start bootstrap</span>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-end align-items-center">
+          <div class="hamburger d-md-none">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="menu">
+            <ul class="d-none d-md-block list-unstyled">
+              <a href="#" class="text-decoration-none"><li>link</li></a>
+              <a href="#" class="text-decoration-none"><li>link</li></a>
+              <a href="#" class="text-decoration-none"><li>link</li></a>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="jumbo">
-      <div class="jumbotron-fr d-flex justify-content-center">
-        <div class="row container row-cols-1">
-          <div class="col text-center">image</div>
-          <div class="col text-center">star bootstrap</div>
-          <div class="col text-center">illustration</div>
-          <div class="col text-center">description</div>
-        </div>
+    <section class="bkg_jumbo">
+      <div class="container d-flex flex-column align-items-center justify-content-center">
+          <div class="avatar p-4">
+            <img src="./asset/img/avatar.svg" alt="">
+          </div>
+          <h1 class="text-uppercase text-center">start bootstrap</h1>
+          <div class="star w-50 mb-3 d-flex align-items-center justify-content-center">
+            <div class="line w-25"></div>
+            <i class="fa-solid fa-star mx-2 fs-2"></i>
+            <div class="line w-25"></div>
+          </div>
       </div>
     </section>
 
@@ -45,7 +62,7 @@
         <div class="col text-center">portfolio</div>
         <div class="col text-center">illustration</div>
       </div>
-      <div class="row row-cols-1">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
         <div class="col my-3">1</div>
         <div class="col my-3">2</div>
         <div class="col my-3">3</div>
@@ -55,34 +72,42 @@
       </div>
     </section>
 
-    <section class="about d-flex justify-content-center">
-      <div class="row container row-cols-1 d-flex justify-content-center">
-        <div class="col text-center">about</div>
-        <div class="col text-center">illustration</div>
-        <div class="row row-cols-1 d-flex justify-content-center row-cols-md-2 ">
-          <div class="col-8 p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque velit ipsum dicta libero sint quidem necessitatibus sit! Perferendis eligendi sed similique animi, fugit mollitia in ea, exercitationem laboriosam quidem optio!</div>
-          <div class="col-8 p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quo distinctio impedit nemo asperiores modi adipisci, optio libero quibusdam voluptate, hic at iste aliquid eligendi corporis consequuntur ea deserunt aperiam.</div>
+    <section class="bkg_about">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-2">
+          <div class="col text-center">about</div>
+          <div class="col text-center">illustration</div>
         </div>
-        <div class="col-3 text-center">download</div>
+      </div>
+      <div class="container_fr">
+        <div class="container-fluid">
+          <div class="row row-cols-1 row-cols-md-2 ">
+            <div class="col p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque velit ipsum dicta libero sint quidem necessitatibus sit! Perferendis eligendi sed similique animi, fugit mollitia in ea, exercitationem laboriosam quidem optio!</div>
+            <div class="col p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam quo distinctio impedit nemo asperiores modi adipisci, optio libero quibusdam voluptate, hic at iste aliquid eligendi corporis consequuntur ea deserunt aperiam.</div>
+          </div>
+          <div class="col-3 text-center">download</div>
+        </div>
       </div>
     </section>
 
-    <section class="contact d-flex justify-content-center">
-      <div class="row container row-cols-1">
-        <div class="col-8 offset-2 text-center">contact me</div>
-        <div class="col-8 offset-2 text-center">illustration</div>    
-        <div class="col-8 offset-2 border-bottom">name</div>    
-        <div class="col-8 offset-2 border-bottom">email address</div>    
-        <div class="col-8 offset-2 border-bottom">phone number</div>
-        <div class="col-8 offset-2 border-bottom">message</div>
-        <div class="col-8 offset-2">send</div>
-      </div>  
+    <section class="contact">
+      <div class="container_fr">
+        <div class="row row-cols-1">
+          <div class="col text-center">contact me</div>
+          <div class="col text-center">illustration</div>    
+          <div class="col border-bottom">name</div>    
+          <div class="col border-bottom">email address</div>    
+          <div class="col border-bottom">phone number</div>
+          <div class="col border-bottom">message</div>
+          <div class="col">send</div>
+        </div>
+      </div> 
     </section>
 
   </main>
 
   <footer>
-    <div class="footer-top d-flex justify-content-center">
+    <div class="footer-top">
       <div class="row container row-cols-1">
         <div class="col">location</div>
         <div class="col">around</div>
